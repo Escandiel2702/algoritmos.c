@@ -1,6 +1,6 @@
 /*        Trabalho de algoritmos:
 Nome:Nicolas Santos Escandiel.
-professor: Alessandro João Brassanini.
+professor: Alessandro JoÃ£o Brassanini.
 Nota:
 */
 #include <stdio.h>
@@ -18,13 +18,13 @@ int main() {
     int clienteProduto[MAX_CLIENTES];
     float totalVendas = 0;
 
-    srand(time(NULL)); // Inicializa o gerador de números aleatórios
+    srand(time(NULL)); // Inicializa o gerador de nÃºmeros aleatÃ³rios
 
-    // Gerar número aleatório de produtos e clientes
+    // Gerar nÃºmero aleatÃ³rio de produtos e clientes
     numProdutos = rand() % MAX_PRODUTOS + 1;   // 1 a 200
     numClientes = rand() % MAX_CLIENTES + 1;   // 1 a 50
 
-    // Preços aleatórios para os produtos
+    // PreÃ§os aleatÃ³rios para os produtos
     for (int i = 0; i < numProdutos; i++) {
         produtos[i] = PRECO_MIN + (rand() % (PRECO_MAX - PRECO_MIN + 1));
     }
@@ -46,9 +46,9 @@ int main() {
     }
 
     printf("\nTOTAL DE VENDAS      %.2f\n", totalVendas);
-    printf("Pressione qualquer tecla para continuar...\n");
+    printf ("------------------------------------------\n");
+    printf("Presione qualquer tecla para encerrar o programa ....\n");
 
     getchar(); // Espera uma tecla para encerrar (em sistemas Windows)
     return 0;
 }
-
